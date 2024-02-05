@@ -5,6 +5,9 @@ import colorgram
 rgb_colors = []
 colors = colorgram.extract('image.jpg', 30)
 for color in colors:
-    rgb_colors.append(color.rgb)
+    red = color.rgb.r
+    green = color.rgb.g
+    blue = color.rgb.b
+    rgb_colors.append((red, green, blue))
 
 print(rgb_colors)
